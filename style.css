@@ -1,0 +1,29 @@
+.politique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.politique>p{
+    color: #071A3A;
+}
+.politique>h3{
+    color: #071A3A;
+}
+.politique>h4{
+    color: #071A3A;
+}
+
+.utilisation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.utilisation>p{
+    color: #071A3A;
+}
+.utilisation>h3{
+    color: #071A3A;
+}
+.utilisation>li{
+    color: #071A3A;
+}
