@@ -24,6 +24,9 @@
 .utilisation>h3{
     color: #071A3A;
 }
-.utilisation>li{
+.utilisation>ul>li{
+    color: #071A3A;
+}
+.utilisation>ol>li{
     color: #071A3A;
 }
