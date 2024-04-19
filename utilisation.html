@@ -105,6 +105,7 @@
         Dans la partie Ventes, la liste de ventes s'affiche par ordre decroissant du moment de création <br>
         Les vente dont l'article a été supprimé, s'affiche avec le logo de LindApp
         Chaque vente possede obligatoirement l'article vendu, la quantité vendue, la dévise, le montant vendu, la date et l'heure ,l'auteur de la vente et facultativement le nom du client <br> 
+        LindApp genere automatiquement le benefice de la vente le prix de vente unitaire lors de la création d'une vente, c'est le benefice ainsi generé qui est renvoyé lors de la generation des rapport <br>
         Chaque membre de l'espace peut voir toutes les vente et les inclure dans la facture mais seul l'auteur d'une vente peut la modifier ou la supprimer <br>
         Lors de la modification d'une vente, LindApp alerte et demande à l'utilisateur sa permission avant d'enregister un vente à perte selon le prix de vente de l'article et la quantité mentionnée par l'utilisateur <br>
     </p>
@@ -116,15 +117,24 @@
         Chaque membre de l'espace peut voir toutes les dépenses mais seul l'auteur d'une dépense peut la modifier ou la supprimer <br>
         A la fin de la facture se trouve un messaage de remerciement de LindApp au point de vente
     </p>
+    <h3>De la gestion des dettes d'un point de vente</h3>
+    <p>
+        Chaque dette possede obligatoirement le nom du client ou contractant , l'article, la date, l'heure, l'auteur, la quantité, le montant <br>
+        LindApp genere automatiquement le prix de vente unitaire et stock le prix d'achat de l'article lors de la création d'une dette, c'est le prix d'acaht ainsi stocké qui est utilisé pour determiner le benefice lors du payement d'une dette <br>
+        Dans la partie Dettes, la liste de dettes s'affiche par ordre decroissant du moment de création <br>
+        Tous les membres du point de vente peuvent voir les dettes mais seul l'auteur d'une dette peut en enregister le payement ou la supprimer <br> 
+        Tous les membres du point de vente peuvent génerer a note de credit les clients <br>
+        A la fin de la note de crédit, se trouve le message de remerciement de LindApp au point de vente
+    </p>
     <h3>De la Caisse et la Gestion d'un point de vente</h3>
     <p>
         Cette partie est reservée aux administrateurs du point de vente donc l'utilisateur ne peut pas y acceder sans connaitre le code admin du point de vente auquel il est connecté <br>
         Dans cette partie l'on trouve les elements suivants en rapport directe avec la caisse et le gestion du point de vente
     </p>
     <ol>
-        <li>Rapport périodique : Un fichier PDF contentant les entrées sous forme de ventes et les sorties sous forme de dépense dans un intervalle des dates choisies par l'utilisateur, il est aussi demandé à l'utilsiateur la dévise sous laquelle il prefere avoir le rapport périodique et les calculs sont faits selon le taux d'échange du point de vente au moment de demande du rapport périodique</li>
-        <li>Rapport journalier : Un fichier PDF contentant les entrées sous forme de ventes et les sorties sous forme de dépense d'une date choisie par l'utilisateur, il est aussi demandé à l'utilsateur la dévise sous laquelle il prefere avoir le rapport journalier et les calculs sont faits selon le taux d'échange du point de vente au moment de demande du rapport journalier</li>
-        <li>Fiche de stock : Un fichier PDF contentant tous les articles du point de vente</li>
+        <li>Rapport périodique : Un fichier PDF contentant les entrées (avec benefices) sous forme de ventes, les sorties sous forme de dépense et les dettes dans un intervalle de dates choisies par l'utilisateur, il est aussi demandé à l'utilsiateur la dévise sous laquelle il prefere avoir le rapport périodique et les calculs sont faits selon le taux d'échange du point de vente au moment de demande du rapport périodique</li>
+        <li>Rapport journalier : Un fichier PDF contentant les entrées (avec benefices) sous forme de ventes, les sorties sous forme de dépense et les dettes d'une date choisie par l'utilisateur, il est aussi demandé à l'utilsateur la dévise sous laquelle il prefere avoir le rapport journalier et les calculs sont faits selon le taux d'échange du point de vente au moment de demande du rapport journalier</li>
+        <li>Fiche de stock : Un fichier PDF contentant tous les articles du point de vente et leur valeur totale en achat et en vente</li>
         <li>Membres du point de vente : Liste de tous ceux qui ont créés leurs comptes utilisateur avec la clé de l'actuel point de vente, l'administrateur peut supprimer tous les membres indésirables</li>
         <li>Parametres du point de vente : Liste de tous les parametres de l'actuel point de vente avec la possibilité d'en modifier les modifiables</li>
     </ol>
@@ -137,13 +147,6 @@
         Les circulares sont accessibles et visibles pour tous les utilisateurs de LindApp, et tous peuvent créer une discussion avec le proprietaire d'un circulaire, mais seuls les proprietaires peuvent les modifier ou les supprimer <br>
         Un message envoyé dans un circualire est directement et uniquement reçu par son destinateire et créer un raccourci à la discussion sous forme de notification <br> 
         Si un utilisateur est supprimé par l'administrateur de son point de vente, tous ses circulaires ne s'affichent pas auw utilisateurs de LindApp, pareil pour les messages et notifications dont il a été l'auteur <br> 
-    </p>
-    <h3>De la gestion des dettes d'un point de vente</h3>
-    <p>
-        Chaque dette possede obligatoirement le contractant, l'article, la date, l'heure, l'auteur, la quantité, le montant <br>
-        Dans la partie Dettes, la liste de dettes s'affiche par ordre decroissant du moment de création <br>
-        Tous les membres du point de vente peuvent voir les dettes mais seul l'auteur d'une dette peut en enregister le payement ou en generer la note de crédit ou la supprimer <br>  
-        A la fin de la note de crédit, se trouve le message de remerciement de LindApp au point de vente
     </p>
     <h3>De l'abonnement au service de LindApp</h3>
     <p>
