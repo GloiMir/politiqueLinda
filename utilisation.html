@@ -12,6 +12,7 @@
     <img src="./Logo 2.png" width="100px" height="100px" style="border-radius: 20px;" alt="">
     <h3>Contexte</h3>
     <P>
+        <em>Derniere revision : Mercredi 30 Avril 2025 </em> </br></br>
         Le contentu de ce document, concerne l'application mobile LindApp propre à Agnesoft, à partir de sa version 1.0.0 jusqu'à ce que qu'une mise à jour de la version soit signalée dans ce même document </br>
         Dans ce document vous trouverez les droits et devoirs des utilisateurs de LindApp envers LindApp et vise versa </br>
         Pour toute préoccupation, n'hesitez pas de contacter +243 978 112 143 sur WhatsApp ou gloirmirindi@gmail.com sur Gmail</br>
@@ -55,13 +56,14 @@
             <li>Le taux d'échange et les 2 devises (obligaoire) : C'est grâce à ces elements que LindApp vous gérére des rapports bien calculé, la 1iere devise choisie est la devise principale et le 2ieme la devise sécondaire. Les 2 dévises ne seront jamais modifiées</li>
             <li>Le phone admin (obligatoire) : Le numéro de téléphone avec le code du pays grâce auquel LindApp contacte votre point en cas de besoin</li>
             <li>Le mail admin (obligatoire) : C'est à ce adresse email que LindApp envoit un message en cas de confirmation de paiement, de mauvais paiement, et d'autres nouvelles  </li>
+            <li>Le code promo (facultatif) : C'est code unique de l'un de nos pomoteurs au cas où l'utilisateur a été interssé et assisté par l'un d'eux pour exploiter LindApp</li>
             <li>La position (obligatoire) : LindApp ne récupere que votre pays et votre ville pour mieux filtrer les annonces et proposer un depôt d'articles approprié </li>
         </ol>
     <p>
         De tous ces elements, seules les devises du taux d'échange ne changent jamais dans le futur du point de vente </br>
         Une fois le point de vente créé, LindApp envoit la clé du point de vente à son créateur dans l'application et sur Email au mail admin et desormais le créateur est consideré garant de tous ceux qui s'inscriront et se connecteront via la clé lui envoyée </br>
         La clé doit être gardé jalousement parceque LindApp n'a pas encore integré la récuperation de clé de point de vente sa version actuelle </br>
-        LindApp considere que le créateur du point de vente a l'âge lui autorisant de posséder un point de vente dans son pays </br> 
+        LindApp considere que le créateur du point de vente a l'âge lui autorisant de posséder ou de representer un point de vente dans son pays </br> 
         LindApp crypte le code admin du point de vente avant de le stoquer dans sa base de données
     </p>
     <h3>De la création de compte utilisateur</h3>
@@ -72,13 +74,14 @@
             <li>L'image de profile (obligatoire) : C'est l'image qui apparait sur la tête de la page d'accueil et sur la liste de membres dans la partie de Gestion</li>
             <li>Le nom (obligatoire) : C'est le nom que apparait comme auteur aux ventes, depenses, dettes, paiement d'abonnement etc dont vous êtes auteur</li>
             <li>Le mot de passe (obligatoire) : C'est juste un mot de passe de votre choix qui vous permettra dans la suite de vous connecter dans n'importe quel téléphone contenant l'application LindApp, il ne doit pas être oublié car pour le récuperer il vous sera demandé de donner votre adresse email à l'admin de votre point de vente et ce dernier actualisera votre compte pour que LindApp vous envoie un mot de passe provisoir sur votre adresse email </li>
+            <li>L'adresse mail (obligatoire) : C'est l'adresse mail que vous pourrez utiliser pour récuperer votre mot de passe si vous l'oubliez</li>
             <li>La clé du point de vente (obligaoire) : C'est la clé du point de vente sur lequel vous souhaitez vous inscrire</li>
         </ol>
     <p>
         Dans LindApp, le nom d'utilisateur est unique par point de vente </br>
         LindApp considere que le créateur du compte utilisateur a l'âge lui autorisant de travailler dans un point de vente dans son pays et qu'il a trouvé légalement la clé du point de vente auquel il s'inscrit </br> 
-        LindApp crypte le mot de passe de l'utilisateur avant de le stoquer dans la base de données </br.>
-        LindApp envoie au mail admin un mail avec le nom et le photo de la personne inscrite dans un point de vente; ainsi si le compte n'est pas supprimé par l'admin, ce compte est consideré desirable
+        LindApp crypte le mot de passe de l'utilisateur avant de le stoquer dans la base de données </br>
+        LindApp envoie au mail admin un email avec le nom et le photo de la personne inscrite; ainsi si le compte n'est pas supprimé par l'admin, ce compte est consideré desirable
     </p>
     <h3>De la connexion de l'utilisateur</h3>
     <p>
@@ -98,21 +101,22 @@
         L'article est ajouté dans un point de vente soit à partir du depôt d'articles soit en completant le formulaire d'ajout soit en dupliquant un article existant </br> 
         Les articles ajoutés depuis le depôt d'articles, n'ont pas de date d'expiration et d'emplacement et ont pour quantité 1 unité </br>
         Lors de la vente d'un article, LindApp ne demande que la quantité et le prix de vente unitaire et LindApp se charge de calculer le prix total de la vente </br>
-        Lors de la vente d'un article, LindApp alerte et demande à l'utilisateur sa permission avant d'enregister un vente à perte selon le prix de vente de l'article et la quantité mentionnée par l'utilisateur <br>
+        Lors de la vente d'un article, LindApp alerte et demande à l'utilisateur sa permission avant d'enregister un vente à perte selon le prix de vente unitaire de l'article et le prix de vente unitaire mentionné par l'utilisateur <br>
         Sur la liste affichée, les articles se suivent par ordre croissant de date d'expiration les dates des articles expirés s'affichant en couleur rouge </br>
-        Les actions effectuées sur les articles sont repercutées en temps réel à tous les membres connectés d'un même point de vente </br>
+        Les actions effectuées sur les articles sont repercutées en temps réel à tous les membres connectés d'un même point de vente qui sont connectés sur LindApp et dans ce point de vente à cet instant</br>
+        Il est possible d'enregister la vente d'un article hors connexion internet mais cette vente ne sera transmise aux autres membres que lorsque son auteur sera connecté sur internet avec LindApp ouvert
         <!-- A la création d'un article, le prix d'achat par defaut est le prix de vente - 20 % du prix de vente -->
     </p>
     <h3>De la gestion des ventes d'un point de vente</h3>
     <p>
         Les ventes sont créées soit depuis la partie Articles (Vente d'un article) ou soit depuis la partie Dettes (Paiement d'une dette) <br>
         Dans la partie Ventes, la liste de ventes s'affiche par ordre decroissant du moment d'enregistrement <br>
-        Les vente dont l'article a été supprimé, s'affiche avec le logo de LindApp
-        Chaque vente possede obligatoirement l'article vendu, la quantité vendue, la dévise, le montant vendu, la date et l'heure ,l'auteur de la vente et facultativement le nom du client <br> 
-        LindApp genere automatiquement le benefice lors de la création d'une vente, c'est le benefice ainsi generé qui est renvoyé lors de la generation des rapports <br>
+        Les vente dont l'article a été supprimé s'affichent avec le logo de LindApp dans la liste
+        Chaque vente possede obligatoirement l'article vendu, la quantité vendue, la dévise, le montant vendu, la date et l'heure ,l'auteur de la vente <br> 
+        LindApp calcule et enregiste automatiquement le benefice grâce au pric d'achat de l'article et au prix de vente mentionné par l'auteur lors de l'enregistrement d'une vente, c'est le benefice ainsi généré qui est renvoyé lors de la generation des rapports <br>
         Chaque membre du point de vente peut voir toutes les ventes et les inclure sur une facture mais seul l'auteur d'une vente peut la modifier ou la supprimer <br>
-        Lors de la modification d'une vente, LindApp alerte et demande à l'utilisateur sa permission avant d'enregister un vente à perte selon le prix de vente de l'article et la quantité mentionnée par l'utilisateur <br>
-        Les factures qui LindApp génére et propose pour impression sont au format C7 pour permettre une impression directe sur POS mais celles qu'il propose pour partage sont au format A4 </br>
+        Lors de la modification d'une vente, LindApp alerte et demande à l'utilisateur sa permission avant d'enregister un vente à perte selon le prix de vente unitaire de l'article et le prix de vente unitaire mentionné par l'utilisateur <br>
+        Les factures que LindApp génére et propose pour impression sont au format C7 pour permettre une impression directe sur POS mais celles qu'il propose pour partage sont au format A4 </br>
         A la fin de la facture se trouve un message de remerciement de LindApp au point de vente
     </p>
     <h3>De la gestion des dépenses d'un point de vente</h3>
@@ -121,6 +125,7 @@
         Toutes les dépenses sont créées explicitement depuis la partie Depenses sauf les dépenses de type ravaillement qui sont créées losrqu'un utilisateur ravitaille un article <br> 
         Dans la partie Depenses, la liste de dépenses s'affiche par ordre decroissant du moment d'enregistrement <br>
         Chaque membre du point de vente peut voir toutes les dépenses mais seul l'auteur d'une dépense peut la modifier ou la supprimer <br>
+        Il est possible d'enregister une dépense hors connexion internet mais cette dépense ne sera transmise aux autres membres que lorsque son auteur sera connecté sur internet avec LindApp ouvert
     </p>
     <h3>De la gestion des dettes d'un point de vente</h3>
     <p>
@@ -130,7 +135,8 @@
         Tous les membres du point de vente peuvent voir les dettes mais seul l'auteur d'une dette peut en enregister le paiement ou la supprimer <br> 
         Tous les membres du point de vente peuvent générer les notes de credit et les imprimer ou les partager <br>
         Les notes de credit sont au format A4</br>
-        A la fin de la note de crédit se trouve un message de remerciement de LindApp au point de vente
+        A la fin de la note de crédit se trouve un message de remerciement de LindApp au point de vente </br>
+        Il est possible d'enregister une dette hors connecxion internet mais cette dette ne sera transmise aux autres membres que lorsque son auteur sera connecté sur internet avec LindApp ouvert
     </p>
     <h3>Des annonces présentes dans LindApp</h3>
     <P>
@@ -139,14 +145,14 @@
     </P>
     <h3>De la Caisse et la Gestion d'un point de vente</h3>
     <p>
-        Cette partie est reservée aux administrateurs du point de vente donc l'utilisateur ne peut pas y acceder sans connaitre le code admin du point de vente auquel il est connecté <br>
+        Cette partie est reservée aux administrateurs du point de vente donc l'utilisateur ne peut pas y acceder sans connaitre le code admin du point de vente sur lequel il est connecté <br>
         Dans cette partie l'on trouve les elements suivants en rapport directe avec la caisse et le gestion du point de vente
     </p>
     <ol>
         <li>Rapport périodique : Un fichier PDF A4 contentant les entrées (avec benefices) sous forme de ventes, les sorties sous forme de dépense et les dettes dans un intervalle de dates choisies par l'utilisateur, LindApp demandé aussi à l'utilsiateur la dévise sous laquelle il prefere avoir le rapport périodique et les calculs sont faits selon le taux d'échange du point de vente au moment de demande du rapport périodique</li>
         <li>Rapport journalier : Un fichier PDF A4 contentant les entrées (avec benefices) sous forme de ventes, les sorties sous forme de dépense et les dettes d'une date choisie par l'utilisateur, LindApp demandé aussi à l'utilsateur la dévise sous laquelle il prefere avoir le rapport journalier et les calculs sont faits selon le taux d'échange du point de vente au moment de demande du rapport journalier</li>
-        <li>Fiche de stock : Un fichier PDF A4 contentant tous les articles du point de vente et leur valeur totale en achat et en vente</li>
-        <li>Membres du point de vente : Liste de tous ceux qui ont créés leurs comptes utilisateur avec la clé de l'actuel point de vente, l'administrateur peut supprimer tous les membres indésirables ou actualiser les mots de passe de ceux qui le lui demandent</li>
+        <li>Fiche de stock : Un fichier PDF A4 contentant tous les articles du point de vente et leur valeur (en argent) totale en achat,en vente et en benefice</li>
+        <li>Membres du point de vente : Liste de tous ceux qui ont créés leurs comptes utilisateur avec la clé de l'actuel point de vente, l'administrateur peut supprimer tous les membres indésirables</li>
         <li>Parametres du point de vente : Liste de tous les parametres de l'actuel point de vente avec la possibilité d'en modifier les modifiables et d'actualiser la clé au cas où il est déjà dans les mains indesirables</li >
     </ol>
     <p>
@@ -154,13 +160,14 @@
     </p>
     <h3>De l'abonnement au service de LindApp</h3>
     <p>
-        Dans sa version actuelle, LindApp facture 1 $ par point de vente par mois <br>
-        Chaque membre du point de vente peut voir les différents paiements déjà effectués par le point de vente <br>
-        Tous les membres du point de vente peuvent enregister des paiements et pour chaque paiement validé ou rejeté, LindApp envoit un email de confirmation à l'email admin du point de vente <br>
+        Dans sa version actuelle, LindApp facture 2 $ par point de vente par mois <br>
+        Chaque membre du point de vente peut voir les différents paiements déjà effectués pour le point de vente <br>
+        Tous les membres du point de vente peuvent enregister des paiements et pour chaque paiement validé ou rejeté, LindApp envoit un email au mail admin du point de vente <br>
         LindApp met à jour les abonnement des points de vente au debut de chaque jour (8h00 heure de Goma en RDC), cette operation etant semi automatique il peut arriver qu'elle n'aie pas lieu certains jours ou qu'elle aie lieu avant ou après l'heure habituelle<br>
         A defaut d'abonnement, le point de vente n'a pas accès à la generation des factures, des notes de credit, des rapports périodique, des rapports journaliers, des fiches de stock et à l'enregistrement des ventes<br>
         LindApp ne prend en compte que les paiements effectués à l'un de portefeuilles présents dans l'application partie Abonnement ou à un autre canal signalé par l'assistant WhatsApp dont le numéro est affiché dans l'application partie Abonnement</br>
-        Outre ce paiement principale, le point de vente doit payer directement au promoteur (agréé par LindApp) au cas où le point de vente sollicicte l'aide du promoteur dans l'enregistrement des articles; dans ce cas le prix fixé est 0.1 $ par article la connexion internet étant assurée par le promoteur</br>
+        Avec le programme de parrainage, LindApp donne au point de vente parrain 1/31ieme (en terne de jour) du paiement du point de vente invité chaque fois que l'invité effectue un paiement</br> 
+        Outre ce paiement principale, le point de vente doit payer directement au promoteur (agréé par LindApp) au cas où le point de vente sollicicte l'aide du promoteur en présentiel dans l'enregistrement et la mise à jour des articles; dans ce cas le prix fixé est 0.1 $ (discutable) par article,  la connexion internet et le transport étant assurés par le promoteur</br>
         La liste de tous les promoteurs agréés se trouve <a href="https://gloimir.github.io/politiqueLinda/promoteurs.html"> sur cette pqge</a>
     </p>
     <!-- <h3>De l'espace publicitaire (Circulaires)</h3>
@@ -173,7 +180,7 @@
     <h3>De la gestion du profile utilisateur</h3>
     <p>
         Il s'agit d'un espace accessible par l'utilisateur uniquement, dont il faut le mot de passe de l'utilisateur pour y acceder <br>
-        Dans cette partie l'utilisateur trouve toutes les informations de son compte entre autre l'image de profile, le nom et le mot de passe et iil peut les modifier, il y trouve également le taux d'échange de son point de vente  
+        Dans cette partie l'utilisateur trouve toutes les informations de son compte entre autre l'image de profile, le nom,l'adresse mail et le mot de passe et il peut les modifier  
     </p>
 </body>
 </html>
