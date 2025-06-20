@@ -41,43 +41,70 @@
 #tableau {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px; /* Espace entre les éléments */
+    gap: 10px; /* Espace entre les éléments */
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(11, 4, 35, 0.1);
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+    border-radius: 15px;
+    align-items: center;
+    width: 95vw;
 }
 .element {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* border: 1px solid #071A3A; */
-    border-radius: 15px;
-    padding: 5px;
-    width: 95vw; /* Largeur fixe pour chaque élément */
-    background-color: rgba(11, 4, 35, 0.1);
+    width: 92.5vw;
+    margin-top: 5px;
 }
 .image {
-    width: 40vw; /* Largeur de l'image */
-    height: 40vw; /* Hauteur de l'image */
-    border-radius: 10px; /* Pour une image circulaire */
-    margin-right: 5px; /* Espace entre l'image et le texte */
+    width: 35vw;
+    height: 35vw;
+    border-radius: 10px;
+    margin-right: 5px;
 }
 .info {
     display: flex;
     flex-direction: column;
     justify-content:space-evenly; /* Centrer verticalement */
-    height: 40vw;
+    height: 35vw;
 }
 h3{
     color: #071A3A;
 }
 .nom{
     color: #071A3A;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
 }
 .code{
     color: #071A3A;
-    font-size: 13px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
 }
 .phone{
     color: #071A3A;
     font-size: 12px;
+}
+.bouton{
+    color: #FFFFFF;
+    background-color: #071A3A;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    width: 92.5vw;
+    height: 10vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
